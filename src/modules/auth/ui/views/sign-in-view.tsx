@@ -22,6 +22,7 @@ import { useForm } from "react-hook-form";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { FaGithub, FaGoogle } from "react-icons/fa";
 
 const formSchema = z.object({
   email: z.string().email(),
@@ -154,7 +155,7 @@ export const SignInView = () => {
                     type="button"
                     className="w-full"
                   >
-                    Google
+                    <FaGoogle/> Google
                   </Button>
                   <Button
                     disabled={pending}
@@ -167,7 +168,7 @@ export const SignInView = () => {
                     type="button"
                     className="w-full"
                   >
-                    GitHub
+                    <FaGithub /> GitHub
                   </Button>
                 </div>
 
