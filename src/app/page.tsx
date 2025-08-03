@@ -57,18 +57,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-y-10">
-    <div className="p-4 flex flex-col gap-y-4">
-      <Input placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-      <Input placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      <Input placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
-      <Button onClick={onSubmit}>Register</Button>
-    </div>
-
-     <div className="p-4 flex flex-col gap-y-4">
-      <Input placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-      <Input placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      <Button onClick={onLogin}>Login</Button>
-    </div>
+ 
     </div>
   )
 }
