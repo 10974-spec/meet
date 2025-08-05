@@ -15,9 +15,9 @@ export const DashboardUserButton = () => {
     const { data, isPending } = authClient.useSession();
 
 
-    if (isPending || !data?.user) {
+if (isPending || !data?.user) {
         return null;
-    }
+}
 
   return (
     <DropdownMenu>
@@ -25,7 +25,7 @@ export const DashboardUserButton = () => {
             {data.user.image ? (
                 <Avatar>
                     <AvatarImage src={data.user.image}/>
-                </Avatar>
+                </Avatar> 
             ): null}
         </DropdownMenuTrigger>
     </DropdownMenu>
